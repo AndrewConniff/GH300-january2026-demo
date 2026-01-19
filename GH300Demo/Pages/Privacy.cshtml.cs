@@ -6,11 +6,11 @@ namespace GH300Demo.Pages;
 
 public class Employee
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string HiringDate { get; set; }
-    public string Department { get; set; }
-    public string JobTitle { get; set; }
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string HiringDate { get; set; } = string.Empty;
+    public string Department { get; set; } = string.Empty;
+    public string JobTitle { get; set; } = string.Empty;
 }
 
 public class PrivacyModel : PageModel

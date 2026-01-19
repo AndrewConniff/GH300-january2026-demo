@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GH300Demo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a16f682b11cdc735808209ba4f8309830fbdc4cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8adff394fb682dc8af420a771e39908c193b6797")]
 [assembly: System.Reflection.AssemblyProductAttribute("GH300Demo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GH300Demo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
