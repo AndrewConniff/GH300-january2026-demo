@@ -1,0 +1,131 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Employee Directory";
+}
+
+<style>
+    .employee-container {
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+    
+    .employee-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .employee-table thead {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+    }
+    
+    .employee-table th {
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+        border: none;
+    }
+    
+    .employee-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .employee-table tbody tr {
+        transition: background-color 0.3s ease;
+    }
+    
+    .employee-table tbody tr:hover {
+        background-color: #f1f3f5;
+    }
+    
+    .employee-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+    
+    .department-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.85em;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .dept-engineering {
+        background-color: #667eea;
+    }
+    
+    .dept-product {
+        background-color: #764ba2;
+    }
+    
+    .dept-marketing {
+        background-color: #f093fb;
+    }
+    
+    .dept-sales {
+        background-color: #4facfe;
+    }
+    
+    .dept-hr {
+        background-color: #43e97b;
+    }
+    
+    .dept-finance {
+        background-color: #fa709a;
+    }
+    
+    .page-title {
+        color: #333;
+        margin-bottom: 10px;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 10px;
+    }
+    
+    .employee-count {
+        color: #666;
+        font-size: 0.9em;
+        margin-top: 5px;
+    }
+</style>
+
+<h1 class="page-title">Employee Directory</h1>
+<p class="employee-count">Total Employees: @Model.Employees.Count</p>
+
+<div class="employee-container">
+    <table class="employee-table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Department</th>
+                <th>Job Title</th>
+                <th>Hiring Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model.Employees)
+            {
+                <tr>
+                    <td>@employee.FirstName</td>
+                    <td>@employee.LastName</td>
+                    <td>
+                        <span class="department-badge dept-@employee.Department.ToLower().Replace(" ", "-")">
+                            @employee.Department
+                        </span>
+                    </td>
+                    <td>@employee.JobTitle</td>
+                    <td>@DateTime.Parse(employee.HiringDate).ToString("MM/dd/yyyy")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "E32i30pTB/A=",
+  "success": true,
+  "projectFilePath": "/workspaces/GH300-january2026-demo/GH300Demo/GH300Demo.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/azure.ai.openai/2.1.0/azure.ai.openai.2.1.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/azure.core/1.44.1/azure.core.1.44.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/openai/2.1.0/openai.2.1.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/system.clientmodel/1.2.1/system.clientmodel.1.2.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/system.memory.data/6.0.0/system.memory.data.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
